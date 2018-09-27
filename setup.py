@@ -45,16 +45,27 @@ setup(
         'Topic :: Software Development :: Libraries',
     ],
 
+    entry_points={
+        "console_scripts": ['keller = kellersensortelegrambot.__main__:main']
+    },
+
     # Packages and dependencies
     package_dir={'': 'src'},
     packages=find_packages('src'),
     install_requires=[
+        "python-telegram-bot >= 10.1.0",
+        # "git+git://github.com/adafruit/Adafruit_Python_DHT.git",
+        "RPi.GPIO >= 0.6.3",
     ],
+    dependency_links=['http://github.com/adafruit/Adafruit_Python_DHT/tarball/master#egg=package-1.0'],
     extras_require={
         'dev': [
             'python-boilerplate[dev]',
         ],
     },
+
+    # extra files
+    data_files=[('/lib/systemd/system/', ['scripts/keller.service'])],
 
     # Other configurations
     zip_safe=False,

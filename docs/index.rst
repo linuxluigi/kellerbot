@@ -1,5 +1,5 @@
 ================================================================================
-Welcome to KellerSensorTelegramBot's documentation!
+Welcome to KellerBot's documentation!
 ================================================================================
 
 .. include:: warning.rst
@@ -10,8 +10,6 @@ Welcome to KellerSensorTelegramBot's documentation!
    :maxdepth: 2
 
    Installation instructions <install.rst>
-   API documentation <apidoc.rst>
-   Frequently asked questions <faq.rst>
    License <license.rst>
 
 Indices and tables

@@ -4,18 +4,30 @@ Installation instructions
 
 KellerSensorTelegramBot can be installed using pip::
 
-    $ python -m pip install KellerSensorTelegramBot
+    $ sudo python3 -m pip install git+git://github.com/linuxluigi/kellerbot.git
 
 This command will fetch the archive and its dependencies from the internet and
 install them. 
 
 If you've downloaded the tarball, unpack it, and execute::
 
-    $ python setup.py install --user
+    $ sudo python setup.py install
 
 You might prefer to install it system-wide. In this case, skip the ``--user``
 option and execute as superuser by prepending the command with ``sudo``.
 
+After finishing the install enable the service for start on boot & set the telegram bot ID & telegram chat ID::
+
+    $ sudo systemctl daemon-reload
+    $ sudo systemctl edit keller.service
+
+    [Service]
+    Environment="BOT_ID=XXX"
+    Environment="CHAT_ID=XXX"
+
+    $ sudo systemctl daemon-reload
+    $ sudo systemctl enable keller.service
+    $ sudo systemctl status keller.service
 
 Troubleshoot
 ------------

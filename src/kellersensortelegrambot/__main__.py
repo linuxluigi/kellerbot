@@ -1,6 +1,7 @@
 import argparse
 import kellersensortelegrambot
 from kellersensortelegrambot import __version__
+from kellersensortelegrambot.telegram_bot import run_bot
 
 
 def get_parser():
@@ -11,6 +12,7 @@ def get_parser():
     version = '%(prog)s ' + __version__
     parser.add_argument('--version', '-v', action='version', version=version)
     return parser
+
 
 def main(args=None):
     """
@@ -25,8 +27,8 @@ def main(args=None):
     parser = get_parser()
     args = parser.parse_args(args)
 
-    # Put your main script logic here
-    print('No action defined for kellersensortelegrambot module!')
+    print('KellerBot is starting :)')
+    run_bot()
 
 
 if __name__ == '__main__':

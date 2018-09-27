@@ -8,8 +8,18 @@
 .. .. image:: https://coveralls.io/repos/github/*github_repository*/badge.svg?branch=master
     :target: https://coveralls.io/github/*github_repository*?branch=master
 
+.. image:: https://readthedocs.org/projects/kellerbot/badge/?version=latest
+    :target: https://kellerbot.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
 
-You are seeing this description because the package owner is lazy and did not
-provide a detailed description for its project ;-)
+KellerBot is an Raspberry Pi project, where the sensor data are callable through a Telegram chat bot.
 
-Since you are here, please help with the KellerSensorTelegramBot's documentation!
+Telegrambot Befehle::
+
+    help - zeige alle Befehle an
+    temperature - Temeratur anzeigen
+    humidity - Luftfeuchtigkeit anzeigen
+    water - Wasser test
+
+.. image:: _static/TelegramBot_bb.svg
+    :alt: Raspberry Pi
