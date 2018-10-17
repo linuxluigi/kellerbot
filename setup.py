@@ -54,7 +54,7 @@ setup(
     packages=find_packages('src'),
     install_requires=[
         "python-telegram-bot >= 10.1.0",
-        # "git+git://github.com/adafruit/Adafruit_Python_DHT.git",
+        "git+git://github.com/adafruit/Adafruit_Python_DHT.git",
         "RPi.GPIO >= 0.6.3",
     ],
     dependency_links=['http://github.com/adafruit/Adafruit_Python_DHT/tarball/master#egg=package-1.0'],
