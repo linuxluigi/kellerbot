@@ -56,7 +56,6 @@ setup(
         "python-telegram-bot >= 10.1.0",
         "RPi.GPIO >= 0.6.3",
     ],
-    dependency_links=['http://github.com/adafruit/Adafruit_Python_DHT/tarball/master#egg=Adafruit_Python_DHT'],
     extras_require={
         'dev': [
             'python-boilerplate[dev]',
