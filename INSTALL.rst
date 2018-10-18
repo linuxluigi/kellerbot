@@ -12,7 +12,7 @@ install them.
 
 If you've downloaded the tarball, unpack it, and execute::
 
-    $ sudo python setup.py install
+    $ sudo python3 setup.py install --process-dependency-links
 
 You might prefer to install it system-wide. In this case, skip the ``--user``
 option and execute as superuser by prepending the command with ``sudo``.
@@ -28,6 +28,7 @@ After finishing the install enable the service for start on boot & set the teleg
 
     $ sudo systemctl daemon-reload
     $ sudo systemctl enable keller.service
+    $ sudo systemctl start keller.service
     $ sudo systemctl status keller.service
 
 Troubleshoot
