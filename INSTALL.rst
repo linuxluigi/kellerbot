@@ -4,7 +4,6 @@ Installation instructions
 
 KellerSensorTelegramBot can be installed using pip::
 
-    $ sudo apt install git python3-pip
     $ sudo pip3 install git+git://github.com/adafruit/Adafruit_Python_DHT.git
     $ sudo python3 -m pip install git+git://github.com/linuxluigi/kellerbot.git
 

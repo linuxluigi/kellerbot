@@ -1,7 +1,7 @@
 import argparse
 import kellersensortelegrambot
 from kellersensortelegrambot import __version__
-from kellersensortelegrambot.telegram_bot import run_bot
+from kellersensortelegrambot.telegram_bot import BotDaemon
 
 
 def get_parser():
@@ -28,7 +28,8 @@ def main(args=None):
     args = parser.parse_args(args)
 
     print('KellerBot is starting :)')
-    run_bot()
+    # run_bot()
+    BotDaemon()
 
 
 if __name__ == '__main__':

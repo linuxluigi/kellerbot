@@ -1,9 +1,6 @@
-.. warning:: Beta software
-    You are using a software that has not reached a stable version yet. Please
-    beware that interfaces might change, APIs might disappear and general
-    breakage can occur before *1.0*.
+.. warning::
+    **Beta Software:**
 
-    If you plan to use this software for something important, please read the
-    roadmap, and the issue tracker in Github. If you are unsure about the
-    future of this project, please talk to the developers, or (better yet) get
-    involved with the development of KellerBot!
+    Diese Software hat noch nicht die Stable Version erreicht. Es kann sein das sich
+    die Strukture, Interface oder API sich ändert oder andere große Änderungen können
+    passieren bevor die Version *1.0* erreicht wird.

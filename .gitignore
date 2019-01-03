@@ -21,3 +21,6 @@ src/kellersensortelegrambot/__meta__.py
 
 # Testing and temporary files
 .tox/
+
+# db
+db.sqlite

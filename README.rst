@@ -11,24 +11,36 @@
     :target: https://kellerbot.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-KellerBot is an Raspberry Pi project, where the sensor data are callable through a Telegram chat bot.
+``kellerBot`` ist ein Raspberry Pi & Arduino Projekt, welches anhand eines 2 ardigen Kabels misst, ob Wasser an den
+Kabel enden ist, das Kabel kurzgeschlossen, das Kabel nicht angeschlossen oder ob das Kabel ohne geschlossenden
+Stromkreis angeschlossen ist. Diese Daten werden von ein Telegram_ Bot in einer Chat Gruppe angezeigt.
+
+.. _Telegram: https://telegram.org/
+
+.. _project-logo:
+.. figure:: _static/android-161184.png
+    :align: center
+    :scale: 20%
+    :alt: Projekt Logo
+
+    Projekt Logo, Quelle: https://pixabay.com/en/android-bot-robot-television-happy-161184/
 
 Hardware
 --------
 
 * Raspberry Pi Model B+ V1.2
-* DHT22 temperature-humidity sensor
-* 3 electric wire (for water detection)
+* DHT22 Temperatur- & Luftfeuchtigkeitssensor
+* mehrere Arduinos Nanos + jeweils 2 ardige Kupferkabel
 
-Commands
+Befehle
 --------
 
 Telegrambot::
 
-    help - zeige alle Befehle an
-    temperature - Temeratur anzeigen
-    humidity - Luftfeuchtigkeit anzeigen
-    water - Wasser test
+    hilfe - zeige alle Befehle an
+    temperatur - Temeratur anzeigen
+    luftfeuchtigkeit - Luftfeuchtigkeit anzeigen
+    wassermelder - Wasser test
 
 GPIO
 ----
@@ -36,39 +48,38 @@ GPIO
 GPIO - Layout
 ^^^^^^^^^^^^^
 
-This documentation was design for the Raspberry Pi Model B+ V1.2. If you have a another pi you need the need to connect
-the wire may differently. To find out the GPIO Layout for your own pi use https://github.com/RPi-Distro/python-gpiozero
+Die Dokumentation wurde für das ``Raspberry Pi Model B+ V1.2`` erstellt. Wenn ein anderen Raspberry Pi verwendet wird,
+kann es sein das, dass GIPO Layout anders aussieht und der `DHT22` Sensor an anderen Pins angeschlossen werden muss.
+Um das GPIO-Layout des Pi's herauszufinden, kann das Projekt https://github.com/RPi-Distro/python-gpiozero
+genutzt werden :numref:`pinout`.
 
-Install python-gpiozero::
+python-gpiozero installieren::
 
     sudo apt install python3-gpiozero # install
     pinout # run in cli
 
-.. image:: _static/pinout.png
+.. _pinout:
+.. figure:: _static/pinout.png
+    :align: center
     :scale: 35%
     :alt: pinout
 
-When you use the Raspberry Pi Model B+ V1.2 than you can use the same connections as in the picture below.
+    Pinout
 
-.. image:: _static/TelegramBot_bb.svg
+Wenn du das ``Raspberry Pi Model B+ V1.2`` Modell verwendest, kannst du die gleichen Pins verwenden wie im Bild
+(:numref:`raspberry_pi`) abgebildet.
+
+
+.. _raspberry_pi:
+.. figure:: _static/TelegramBot_bb.svg
+    :align: center
     :alt: Raspberry Pi
 
-DHT22 temperature-humidity sensor
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    Raspberry Pi Steckplan
+
+DHT22 Temperatur- & Luftfeuchtigkeitssensor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * ``+`` -> ``3V3``
 * ``out`` -> ``GPIO 7``
 * ``-`` -> ``GND``
-
-Water detection
-^^^^^^^^^^^^^^^
-
-* ``12`` + ``3V3`` or ``5V``
-* ``16`` + ``3V3`` or ``5V``
-* ``18`` + ``3V3`` or ``5V``
-
-
-
-
-
-

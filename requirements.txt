@@ -2,3 +2,4 @@
 python-telegram-bot>=10.1.0
 RPi.GPIO>=0.6.3
 git+git://github.com/adafruit/Adafruit_Python_DHT.git#egg=Adafruit_Python_DHT
+pyserial==3.4

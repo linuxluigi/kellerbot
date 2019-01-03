@@ -1,5 +1,5 @@
 ================================================================================
-Welcome to KellerBot's documentation!
+KellerBot Dokumentation
 ================================================================================
 
 .. include:: warning.rst
@@ -9,7 +9,10 @@ Welcome to KellerBot's documentation!
 .. toctree::
    :maxdepth: 2
 
-   Installation instructions <install.rst>
+   Theoretischer Aufbau <theorie.rst>
+   Hardware <hardware.rst>
+   Telegram <telegram.rst>
+   Installation <install.rst>
    License <license.rst>
 
 Indices and tables
