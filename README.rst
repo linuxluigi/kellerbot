@@ -8,7 +8,7 @@
     :target: https://coveralls.io/github/*github_repository*?branch=master
 
 .. image:: https://readthedocs.org/projects/kellerbot/badge/?version=latest
-    :target: https://kellerbot.readthedocs.io/en/latest/?badge=latest
+    :target: https://kellerbot.readthedocs.io/de/latest/?badge=latest
     :alt: Documentation Status
 
 ``kellerBot`` ist ein Raspberry Pi & Arduino Projekt, welches anhand eines 2 ardigen Kabels misst, ob Wasser an den
