@@ -34,6 +34,7 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.viewcode',
     'sphinx.ext.napoleon',  # Supports google-style docstrings.
+    'sphinx.ext.imgconverter',  # svg support
 ]
 
 numfig = True  # enable numfig
