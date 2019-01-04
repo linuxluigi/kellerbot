@@ -24,3 +24,7 @@ src/kellersensortelegrambot/__meta__.py
 
 # db
 db.sqlite
+
+# enviroment
+env/
+venv/
