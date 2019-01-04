@@ -71,7 +71,7 @@ Wenn du das ``Raspberry Pi Model B+ V1.2`` Modell verwendest, kannst du die glei
 
 
 .. _raspberry_pi:
-.. figure:: _static/TelegramBot_bb.svg
+.. figure:: _static/TelegramBot_bb.png
     :align: center
     :alt: Raspberry Pi
 
