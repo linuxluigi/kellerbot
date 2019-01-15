@@ -112,4 +112,47 @@ Nach dem Installation aktiviere starten nach dem booten und setze die Telegram B
 Keller Hardware Installation
 ----------------------------
 
-asd
+Nachdem auf die Arduinos das Script augespielt, an den Raspberry Pi der DHT22 Sensor angeschlossen und
+Raspbian aufgespielt wurde, können die Komponenten im Keller installiert werden.
+
+Als erstes die Arduinos via USB an den Raspberry Pi anschließen, dann den Pi mit ein WLAN Dongel oder via WLAN repeater
+mit an das WLAN Netzwerk anschließen und alles mit Strom versorgen wie in :numref:`hardware-anschluss` dargestellt ist.
+
+.. _hardware-anschluss:
+.. figure:: _static/fotos/IMG_20190110_132558.jpg
+    :align: center
+    :scale: 5%
+    :alt: Projekt Hardware Installation
+
+    Projekt Hardware Installation
+
+Die Kabel welches zur Messung dienen soll an ein Ende Weiblich Verbindungsstecker aufsetzten und diese an den Pins
+``A2`` & ``A1`` des jeweiligen Arduinos aufsetzten, wie in :numref:`hardware-arduino-anschluss` zu sehen ist.
+
+.. _hardware-arduino-anschluss:
+.. figure:: _static/fotos/IMG_20190110_132628.jpg
+    :align: center
+    :scale: 5%
+    :alt: Arduino Kabel Anschluss
+
+    Arduino Kabel Anschluss
+
+Im letzten Schritt die Kabel, welche an den Arduinos angeschlossen wurden, im Keller verlegen, so das mindestens das Ende
+am Boden liegt um so effektive den Zustand messen zu können. Wie in :numref:`hardware-kabel-verlegen-decke` und
+:numref:`hardware-kabel-verlegen-ende` zu sehen ist.
+
+.. _hardware-kabel-verlegen-decke:
+.. figure:: _static/fotos/IMG_20190110_132904.jpg
+    :align: center
+    :scale: 5%
+    :alt: Messkabel verlegen an der Decke
+
+    Messkabel verlegen an der Decke
+
+.. _hardware-kabel-verlegen-ende:
+.. figure:: _static/fotos/IMG_20190110_132911.jpg
+    :align: center
+    :scale: 5%
+    :alt: Messkabel ende verlegen
+
+    Messkabel ende verlegen
