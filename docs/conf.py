@@ -35,6 +35,8 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.napoleon',  # Supports google-style docstrings.
     'sphinx.ext.imgconverter',  # svg support
+    'sphinxcontrib.bibtex',  # enable latex bibtex support
+    'sphinx.ext.mathjax',  # enable math support
 ]
 
 numfig = True  # enable numfig

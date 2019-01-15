@@ -16,19 +16,10 @@ void setup()
 
 void loop()
 {
-    // Capacitance Value = inf nF (HighVal, t= 400004 us, ADC= 0) -> direct contacts of the cabels
-    // Capacitance Value = 57.62 uF (HighVal, t= 400004 us, ADC= 150-300) -> Water
-    // Capacitance Value = 0.242 pF (9-10)  -> no cabel conected
-    // Capacitance Value = 162.408 pF (>= 800) -> cabel connected
-
-    // val => 1000 -> direct cabel contact
-
     // farads
     // uF -> microfarads = 1000000uf -> 1 F
     // nF -> nanofarads = 1000 -> 1uF
     // pF -> micromicrofarads or picofarads = 1000 -> 1 nF
-
-    // output in nF!
   
     pinMode(IN_PIN, INPUT);
     digitalWrite(OUT_PIN, HIGH);
@@ -77,4 +68,5 @@ void loop()
     while (millis() % 1000 != 0)
       ;    
 }
+
 

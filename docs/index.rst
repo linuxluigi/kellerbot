@@ -9,15 +9,12 @@ KellerBot Dokumentation
 .. toctree::
    :maxdepth: 2
 
-   Theoretischer Aufbau <theorie.rst>
-   Hardware <hardware.rst>
-   Telegram <telegram.rst>
-   Installation <install.rst>
-   License <license.rst>
+   theorie.rst
+   hardware.rst
+   telegram.rst
+   install.rst
+   auswertung.rst
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   license.rst
+   glossar.rst
+   literaturverzeichnis.rst

@@ -1,4 +1,5 @@
-========
+.. _Telegram:
+
 Telegram
 ========
 
@@ -49,7 +50,7 @@ werden (:numref:`BotFather_hinzufügen`).
 
 .. _BotFather_hinzufügen:
 .. figure:: _static/telegram/BotFather/add-BotFather.png
-    :scale: 40%
+    :scale: 30%
     :align: center
     :alt: BotFather hinzufügen
 
@@ -60,7 +61,7 @@ auf ``START`` klicken um den ``BotFather`` zu interagieren.
 
 .. _BotFather_init_chat:
 .. figure:: _static/telegram/BotFather/BotFather-init-chat.png
-    :scale: 40%
+    :scale: 30%
     :align: center
     :alt: BotFather Chat starten
 
@@ -71,7 +72,7 @@ wieder direkt verwendet werden (:numref:`BotFather_history_contact`).
 
 .. _BotFather_history_contact:
 .. figure:: _static/telegram/BotFather/chat-history-contact.png
-    :scale: 60%
+    :scale: 40%
     :align: center
     :alt: BotFather Kontakt Verlauf
 
@@ -118,7 +119,7 @@ neuen Bot klicken, siehe :numref:`BotFather_bot_auswählen`.
 
 .. _BotFather_bot_auswählen:
 .. figure:: _static/telegram/BotFather/select-bot.png
-    :scale: 60%
+    :scale: 40%
     :align: center
     :alt: Bot auswählen
 
@@ -128,7 +129,7 @@ In den neuen Untermenü (:numref:`BotFather_bot_edit`) auf ``Edit Bot`` klicken.
 
 .. _BotFather_bot_edit:
 .. figure:: _static/telegram/BotFather/edit-bot.png
-    :scale: 60%
+    :scale: 40%
     :align: center
     :alt: Bot bearbeiten
 
@@ -140,7 +141,7 @@ oder im Fall des Bildes, das gewünschte Bild im Chat hochladen.
 
 .. _BotFather_bot_options:
 .. figure:: _static/telegram/BotFather/edit-bot-options.png
-    :scale: 60%
+    :scale: 40%
     :align: center
     :alt: Bot Optionsmenü
 
@@ -175,7 +176,7 @@ Standartwerte
 
     .. _BotFather_bot_image:
     .. figure:: _static/telegram/BotFather/bot-image.png
-        :scale: 40%
+        :scale: 30%
         :align: center
         :alt: Bot Bild einfügen
 
@@ -191,7 +192,7 @@ Im Optionsmenü von Telegram auf ``New Group`` klicken und dort eine Gruppe für
 
 .. _telegram-create-group:
 .. figure:: _static/telegram/create-group.png
-    :scale: 40%
+    :scale: 30%
     :align: center
     :alt: Telegram Gruppe erstellen
 
@@ -207,6 +208,8 @@ Im nächsten Schritt erscheint das ``Add Members`` Fenster, hier den ``KellerBot
     :alt: Telegram Gruppe Mitglieder hinzufügen
 
     Telegram Gruppe Mitglieder hinzufügen
+
+.. _Telegram_create_bot_group:
 
 5. Chat Group ID erhalten
 ^^^^^^^^^^^^^^^^^^^^^^^^^
