@@ -90,7 +90,7 @@ Um einen neuen Bot zu erstellen muss im Chat des ``BotFather`` (:numref:`BotFath
     Der Bot Name muss immer mit ``bot`` enden und muss einzigartig sein, also der Name darf noch nicht vergeben sein!
     Beispiele ``Keller_bot``, ``KellerBot``, ``kellerbot`` oder ``kellerBOT``.
 
-Nachdem erstellen des Bots gibt Telegram die URL & den Token des Bots aus:
+Nachdem erstellen des Bots gibt Telegram die URL & den :term:`Token` des Bots aus:
 
     Done! Congratulations on your new bot. You will find it at `t.me/KellerBot`_. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you've finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
 
@@ -101,10 +101,10 @@ Nachdem erstellen des Bots gibt Telegram die URL & den Token des Bots aus:
 
 .. _t.me/KellerBot: https://t.me/KellerBot
 
-Der sobend erstellte Token notieren, dieser wird benötigt, damit das Programm später auf dem ``KellerBot`` zugreifen kann.
+Der sobend erstellte :term:`Token` notieren, dieser wird benötigt, damit das Programm später auf dem ``KellerBot`` zugreifen kann.
 
 .. warning::
-    Der Token des Telegram Bots sollte nie veröffentlicht werden! Der Token in diesem Beispiel existiert auch nicht.
+    Der :term:`Token` des Telegram Bots sollte nie veröffentlicht werden! Der Token in diesem Beispiel existiert auch nicht.
 
 Um den gerade erstellten Bot zu in den eigenen Chat zu aktivieren muss auf den Bot Link geklickt werden, der Link
 ist aus ``t.me/`` und deinen Bot Namen zusammengesetzt. In diesem Beispiel heist der Link ``t.me/KellerBot``.
@@ -214,7 +214,7 @@ Im nächsten Schritt erscheint das ``Add Members`` Fenster, hier den ``KellerBot
 5. Chat Group ID erhalten
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Um die Chat Group ID zu erhalten, muss der ``KellerBot`` in der gewünschten Gruppe sein und es wird der Token
+Um die Chat Group ID zu erhalten, muss der ``KellerBot`` in der gewünschten Gruppe sein und es wird der :term:`Token`
 (welcher aus dem Kaptiel :ref:`Telegram_create_bot` erstellt wurde), außerdem muss noch mindestens eine Nachricht
 in der Gruppe geschrieben werden.
 
@@ -222,7 +222,7 @@ Die Chat Group ID ist via ``https://api.telegram.org/bot<Token>/getUpdates`` abr
 würde die URL ``https://api.telegram.org/bot659931436:AAEAVoiIJxkswS-nl3tLBaTC1ydsgJn5SVA/getUpdates`` lauten.
 Die Ausgabe der URL ist ein JSON, wobei die Group ID unter ``result -> 0 -> message -> chat -> id`` zu finden ist
 (:numref:`telegram-group-show-id`). Diese ID wie den `Token` zwischenspeichern, diese Werte werden später benötigt bei
-der Einrichtung des Bots auf dem Raspberry Pi.
+der Einrichtung des Bots auf dem :term:`Raspberry Pi`.
 
 .. _telegram-group-show-id:
 .. figure:: _static/telegram/show-group-id.png

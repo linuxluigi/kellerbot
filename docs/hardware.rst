@@ -3,26 +3,26 @@
 Hardware
 ========
 
-Für dieses Projekt wurde ein `Raspberry Pi Model B+ V1.2`, 2 `Arduino Nano`, ein `DHT22 temperature-humidity sensor`,
+Für dieses Projekt wurde ein `Raspberry Pi Model B+ V1.2`, 2 :term:`Arduino Nano`, ein :term:`DHT22 Temperatur- und Luftfeuchtigkeitssensor`,
 2 `zwei ardriges nicht abgeschirmtes Kupferkabel` und ein `TP-LINK WLAN Router` verwendet.
 
 Raspberry Pi
 ------------
 
-Um den `DHT22 temperature-humidity sensor` ansteuern zu können oder für den :ref:`aufbau_1_raspberry_pi_gpio`
-wird ein Raspberry Pi oder ein ähnlicher Einplatinenrechner mit GPIO benötigt.
+Um den :term:`DHT22 Temperatur- und Luftfeuchtigkeitssensor` ansteuern zu können oder für den :ref:`aufbau_1_raspberry_pi_gpio`
+wird ein :term:`Raspberry Pi` oder ein ähnlicher :term:`Einplatinenrechner` mit :term:`GPIO` benötigt.
 
 DHT22 Temperatur- & Luftfeuchtigkeitssensor
 -------------------------------------------
 
-Der ``DHT22 Temperatursensor und Luftfeuchtigkeitssensor`` ist für dieses Projekt ein Modell welches mit Platine
-ausgeliefert wurde und ist daher wärend des ansteckens mit dem Raspberry Pi unterschiedlich gegenüber Modellen ohne
+Der :term:`DHT22 Temperatur- und Luftfeuchtigkeitssensor` ist für dieses Projekt ein Modell welches mit Platine
+ausgeliefert wurde und ist daher wärend des ansteckens mit dem :term:`Raspberry Pi` unterschiedlich gegenüber Modellen ohne
 Platine.
 
 Arduino Nano
 ------------
 
-Für dieses Projekt wurden nicht Orginale `Arduino Nanos` verwendet, dadurch müssen die entsprechenden Treiber noch
+Für dieses Projekt wurden nicht Orginale :term:`Arduino Nano` verwendet, dadurch müssen die entsprechenden Treiber noch
 nach installiert werden. Die Treiber sollten aber nur dann nachinstalliert werden, wenn diese nicht schon vom Werk aus
 auf dem System vorhanden sind, wie z.B. MacOs.
 
@@ -34,7 +34,7 @@ Auf der Rückseite des Nanos (:numref:`Arduino_Nano_Controller`) steht der Contr
     :scale: 12%
     :alt: Arduino Nano
 
-    Arduino Nano Controller Name
+    :term:`Arduino Nano` Controller Name
 
 In diesen Fall ist der Treiber auf https://sparks.gogo.co.nz/ch340.html zu finden.
 
@@ -51,8 +51,8 @@ Kabelstränge direkt nebeneinander sind wie bei ein Telefonkabel oder Lautsprech
 TP-LINK WLAN Router
 -------------------
 
-Der `TP-LINK WLAN Router` ist Optional, er dient außschlich als WLAN Repeater um den Raspberry Pi über eine große
-Distanz from WLAN Access Point. Dabei wird der Router mit dem Quelloffenden Betriebsystem openWrt geflasht womit er auch
-als WLAN Repeater verwendet werden kann.
+Der `TP-LINK WLAN Router` ist Optional, er dient außschlich als :term:`WLAN zu LAN Bridge` um den :term:`Raspberry Pi` über eine große
+Distanz from :term:`WLAN Access Point`. Dabei wird der Router mit dem Quelloffenden Betriebsystem :term:`openWrt` geflasht womit er auch
+als :term:`WLAN zu LAN Bridge` verwendet werden kann.
 
 .. todo router einfügen

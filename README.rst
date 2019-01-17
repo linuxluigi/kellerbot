@@ -7,10 +7,12 @@
 .. .. image:: https://coveralls.io/repos/github/*github_repository*/badge.svg?branch=master
     :target: https://coveralls.io/github/*github_repository*?branch=master
 
-.. image:: https://readthedocs.org/projects/kellerbot/badge/?version=latest
+.. .. image:: https://readthedocs.org/projects/kellerbot/badge/?version=latest
     :target: https://kellerbot.readthedocs.io/de/latest/?badge=latest
     :alt: Documentation Status
 
+- Online Dokumentation: https://kellerbot.readthedocs.io/de
+- Quellcode: https://github.com/linuxluigi/kellerbot
 
 ``kellerBot`` ist ein Raspberry Pi & Arduino Projekt, welches anhand eines 2 ardigen Kabels misst, ob Wasser an den
 Kabel enden ist, das Kabel kurzgeschlossen, das Kabel nicht angeschlossen oder ob das Kabel ohne geschlossenden
@@ -35,7 +37,7 @@ Im der :numref:`projekt-aufbau` ist der komplette Aufbau zu sehen.
 * Raspberry Pi Model B+ V1.2
 * DHT22 Temperatur- & Luftfeuchtigkeitssensor
 * mehrere Arduinos Nanos + jeweils 2 ardige Kupferkabel
-* USB Dongel oder WLAN Repeater
+* USB WLAN Dongel oder WLAN Repeater
 
 .. _projekt-aufbau:
 .. figure:: _static/fotos/IMG_20190110_132612.jpg
