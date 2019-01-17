@@ -13,6 +13,7 @@
 
 - Online Dokumentation: https://kellerbot.readthedocs.io/de
 - Quellcode: https://github.com/linuxluigi/kellerbot
+- Präsentation: https://github.com/linuxluigi/kellerbot/raw/master/docs/_static/pr%C3%A4sentation.odp
 
 ``kellerBot`` ist ein Raspberry Pi & Arduino Projekt, welches anhand eines 2 ardigen Kabels misst, ob Wasser an den
 Kabelenden ist, das Kabel kurzgeschlossen, das Kabel nicht angeschlossen oder ob das Kabel ohne geschlossenden
@@ -23,7 +24,7 @@ Die :numref:`project-logo` ist das Projekt Logo, welches als Avatar für den Tel
 .. _Telegram: https://telegram.org/
 
 .. _project-logo:
-.. figure:: _static/android-161184.png
+.. figure:: https://github.com/linuxluigi/kellerbot/raw/master/docs/_static/android-161184.png
     :align: center
     :scale: 5%
     :alt: Projekt Logo
@@ -40,7 +41,7 @@ Im der :numref:`projekt-aufbau` ist der komplette Aufbau zu sehen.
 * USB WLAN Stick oder :term:`WLAN zu LAN Bridge`
 
 .. _projekt-aufbau:
-.. figure:: _static/fotos/IMG_20190110_132612.jpg
+.. figure:: https://github.com/linuxluigi/kellerbot/raw/master/docs/_static/fotos/IMG_20190110_132612.jpg
     :align: center
     :scale: 5%
     :alt: Projekt Aufbau
