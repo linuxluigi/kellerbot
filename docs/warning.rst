@@ -1,6 +1,6 @@
 .. warning::
     **Beta Software:**
 
-    Diese Software hat noch nicht die Stable Version erreicht. Es kann sein das sich
-    die Strukture, Interface oder API sich ändert oder andere große Änderungen können
-    passieren bevor die Version *1.0* erreicht wird.
+    Diese Software hat noch nicht die stable Version erreicht. Es kann sein, dass sich
+    die Struktur, Interface oder API ändern oder andere große Änderungen
+    passieren, bevor die Version *1.0* erreicht wird.

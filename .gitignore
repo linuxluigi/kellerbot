@@ -28,3 +28,6 @@ db.sqlite
 # enviroment
 env/
 venv/
+
+# presentation
+*~lock.*

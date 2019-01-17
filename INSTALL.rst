@@ -9,10 +9,10 @@ Für die Installation wird die :ref:`Hardware` und ein eingerichteter :ref:`Tele
 Arduino
 -------
 
-Den ersten Arduino Nano an ein Computer anschließen und die Arduino IDE starten (falls diese noch nicht installiert ist,
+Den ersten Arduino Nano an einen Computer anschließen und die Arduino IDE starten (falls diese noch nicht installiert ist,
 kann diese via https://www.arduino.cc/en/Main/Software heruntergeladen werden).
 
-Nach den starten den Inhalt der Datei ``arduino-capacitance-meter/arduino-capacitance-meter.ino`` in der Arduino Software
+Nach dem Starten den Inhalt der Datei ``arduino-capacitance-meter/arduino-capacitance-meter.ino`` in die Arduino Software
 einfügen.
 
 Die IDE für den Arduino Nano einstellen
@@ -23,7 +23,7 @@ Prozessor: ``Tools`` -> ``Processor`` -> ``ATmega328P (Old Bootloader)``
 
 Port: ``Tools`` -> ``Port`` -> ``/dev/cu.wchusbserial14130`` (der Port kann von System zu System anders aussehen)
 
-Nachdem die Einstellungen gesetzte wurden kann
+Nachdem die Einstellungen gesetzt wurden kann
 
 Raspberry Pi
 ------------
@@ -34,8 +34,8 @@ DHT22 Temperatur- & Luftfeuchtigkeitssensor am Raspberry Pi anschließen
 GPIO - Layout
 """""""""""""
 
-Die Dokumentation wurde für das ``Raspberry Pi Model B+ V1.2`` erstellt. Wenn ein anderen Raspberry Pi verwendet wird,
-kann es sein das, dass GIPO Layout anders aussieht und der `DHT22` Sensor an anderen Pins angeschlossen werden muss.
+Die Dokumentation wurde für das ``Raspberry Pi Model B+ V1.2`` erstellt. Wenn ein anderer Raspberry Pi verwendet wird,
+kann es sein das, dass das :term:`GPIO` Layout anders aussieht und der `DHT22` Sensor an andere Pins angeschlossen werden muss.
 Um das GPIO-Layout des Pi's herauszufinden, kann das Projekt https://github.com/RPi-Distro/python-gpiozero
 genutzt werden :numref:`pinout`.
 
@@ -52,12 +52,12 @@ python-gpiozero installieren::
 
     Pinout
 
-Wenn du das ``Raspberry Pi Model B+ V1.2`` Modell verwendest, kannst du die gleichen Pins verwenden wie im Bild
+Beim Verwenden des ``Raspberry Pi Model B+ V1.2`` Models, die gleichen Pins verwenden, wie im Bild
 (:numref:`raspberry_pi`) abgebildet.
 
 .. warning::
-    Bei dem ``DHT22 Temperatursensor und Luftfeuchtigkeitssensor`` im Bild handelt es sich um ein Modell welches
-    mit Platine Plantine ausgeliefert wurde, der Steckplan ohne Plantine weicht von dieser Abbildung ab!
+    Bei dem ``DHT22 Temperatursensor und Luftfeuchtigkeitssensor`` im Bild handelt es sich um ein Modell, welches
+    mit Platine ausgeliefert wurde. Der Steckplan ohne Platine weicht von dieser Abbildung ab!
 
 .. _raspberry_pi:
 .. figure:: _static/TelegramBot_bb.png
@@ -76,26 +76,28 @@ Wenn du das ``Raspberry Pi Model B+ V1.2`` Modell verwendest, kannst du die glei
 Betriebsystem
 ^^^^^^^^^^^^^
 
-Für dieses Projekt wird eine saubere Raspbian Installation vorausgesetzt, die aktuelle Version kann von der Offiziellen
+Für dieses Projekt wird eine saubere Raspbian Installation vorausgesetzt, die aktuelle Version kann von der offiziellen
 Raspberry Pi Website heruntergeladen werden: https://www.raspberrypi.org/downloads/raspbian/
 
 KellerBot Software
 ^^^^^^^^^^^^^^^^^^
 
-KellerSensorTelegramBot kann auf den Raspberry Pi über pip installiert werden::
+KellerSensorTelegramBot kann auf dem Raspberry Pi über pip installiert werden::
 
     $ sudo pip3 install git+git://github.com/adafruit/Adafruit_Python_DHT.git
     $ sudo python3 -m pip install git+git://github.com/linuxluigi/kellerbot.git
 
-Dieser Befehl lädt das Archive und deren Abhänigkeiten aus dem Internet und instaliert diese.
+Dieser Befehl lädt das Archiv und deren Abhänigkeiten aus dem Internet herunter und installiert diese.
 
-Wenn der Tarball heruntergeladen wurde, entpacke diese und für diesen aus::
+Falls der Tarball heruntergeladen wurde, diesen entpacken und ausführen::
 
     $ sudo pip3 install git+git://github.com/adafruit/Adafruit_Python_DHT.git
     $ sudo python3 setup.py install
 
-Nach dem Installation aktiviere starten nach dem booten und setze die Telegram Bot ID & Telegram Chat ID
-(für die Telegram ID's sihe die Kaptiel :ref:`Telegram_create_bot_group` & :ref:`Telegram_create_bot`::
+Nach der Installation des Pakets muss der Service geladen werden. Die Telegram Bot ID & Telegram Chat ID
+(für die Telegram ID's siehe die Kaptiel :ref:`Telegram_create_bot_group` & :ref:`Telegram_create_bot`) in der service
+konfig Datei eintragen und anschließend den Service neuladen. Automatisches Starten während des Bootvorgangs aktivieren
+und den Service ausführen::
 
     $ sudo systemctl daemon-reload
     $ sudo systemctl edit keller.service
@@ -112,11 +114,9 @@ Nach dem Installation aktiviere starten nach dem booten und setze die Telegram B
 Keller Hardware Installation
 ----------------------------
 
-Nachdem auf die Arduinos das Script augespielt, an den Raspberry Pi der DHT22 Sensor angeschlossen und
-Raspbian aufgespielt wurde, können die Komponenten im Keller installiert werden.
-
-Als erstes die Arduinos via USB an den Raspberry Pi anschließen, dann den Pi mit ein WLAN Dongel oder via WLAN repeater
-mit an das WLAN Netzwerk anschließen und alles mit Strom versorgen wie in :numref:`hardware-anschluss` dargestellt ist.
+Als erstes die Arduinos via USB an den Raspberry Pi anschließen, dann den Pi mit einem WLAN Stick oder via
+WLAN to Lan Bridge an das WLAN Netzwerk anschließen und alles mit Strom versorgen, wie in :numref:`hardware-anschluss`
+dargestellt.
 
 .. _hardware-anschluss:
 .. figure:: _static/fotos/IMG_20190110_132558.jpg
@@ -126,20 +126,20 @@ mit an das WLAN Netzwerk anschließen und alles mit Strom versorgen wie in :numr
 
     Projekt Hardware Installation
 
-Die Kabel welches zur Messung dienen soll an ein Ende Weiblich Verbindungsstecker aufsetzten und diese an den Pins
-``A2`` & ``A1`` des jeweiligen Arduinos aufsetzten, wie in :numref:`hardware-arduino-anschluss` zu sehen ist.
+Die Kabel, die zur Messung dienen sollen, an einem Ende mit einem weiblichen Verbindungsstecker versehen und an die Pins
+``A2`` & ``A1`` des jeweiligen Arduinos anstecken, wie in :numref:`hardware-arduino-anschluss` zu sehen.
 
 .. _hardware-arduino-anschluss:
 .. figure:: _static/fotos/IMG_20190110_132628.jpg
     :align: center
     :scale: 5%
-    :alt: Arduino Kabel Anschluss
+    :alt: Arduino Kabelanschluss
 
-    Arduino Kabel Anschluss
+    Arduino Kabelanschluss
 
-Im letzten Schritt die Kabel, welche an den Arduinos angeschlossen wurden, im Keller verlegen, so das mindestens das Ende
-am Boden liegt um so effektive den Zustand messen zu können. Wie in :numref:`hardware-kabel-verlegen-decke` und
-:numref:`hardware-kabel-verlegen-ende` zu sehen ist.
+Im letzten Schritt die Kabel, die an die Arduinos angeschlossen wurden, im Keller verlegen. Mindestens das Ende
+muss am Boden liegen, um effektiv den Zustand messen zu können, wie in :numref:`hardware-kabel-verlegen-decke` und
+:numref:`hardware-kabel-verlegen-ende` zu sehen.
 
 .. _hardware-kabel-verlegen-decke:
 .. figure:: _static/fotos/IMG_20190110_132904.jpg
@@ -153,6 +153,6 @@ am Boden liegt um so effektive den Zustand messen zu können. Wie in :numref:`ha
 .. figure:: _static/fotos/IMG_20190110_132911.jpg
     :align: center
     :scale: 5%
-    :alt: Messkabel ende verlegen
+    :alt: Messkabelende verlegen
 
-    Messkabel ende verlegen
+    Messkabelende verlegen
