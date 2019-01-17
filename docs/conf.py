@@ -58,7 +58,7 @@ master_doc = 'index'
 # General information about the project.
 project = 'KellerBot'
 project_title = project.title()
-author = 'Steffen Exler'
+author = 's0556166 Steffen Exler'
 copyright = '2019, %s' % author
 
 # The version info for the project you're documenting, acts as replacement for
