@@ -11,7 +11,7 @@
     :target: https://kellerbot.readthedocs.io/de/latest/?badge=latest
     :alt: Documentation Status
 
-- Online Dokumentation: https://kellerbot.readthedocs.io/de
+- Online Dokumentation: https://kellerbot.readthedocs.io/de/latest/
 - Quellcode: https://github.com/linuxluigi/kellerbot
 - Präsentation: https://github.com/linuxluigi/kellerbot/raw/master/docs/_static/pr%C3%A4sentation.odp
 
